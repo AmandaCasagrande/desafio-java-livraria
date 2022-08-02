@@ -26,6 +26,12 @@ Run class DesafioApplication
 >`
 https://github.com/AmandaCasagrande/desafio-java-livraria/tree/main/collection-postman
 `
+
+## 🔨 Gerador de UUID
+>`
+https://www.uuidgenerator.net/
+`
+
 ## 💼 Regra de Negócios:
 
 --> Livro [X]
