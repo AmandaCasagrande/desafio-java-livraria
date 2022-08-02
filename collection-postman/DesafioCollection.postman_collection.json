@@ -27,15 +27,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/livro/1",
+							"raw": "http://localhost:8080/livro/pesquisar/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
 								"livro",
+								"pesquisar",
 								"1"
 							]
 						}
@@ -60,15 +60,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/livro/1",
+							"raw": "http://localhost:8080/livro/pesquisar/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
 								"livro",
+								"pesquisar",
 								"1"
 							]
 						}
@@ -93,15 +93,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/livro/1",
+							"raw": "http://localhost:8080/livro/pesquisar/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
 								"livro",
+								"pesquisar",
 								"1"
 							]
 						}
@@ -126,15 +126,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/livro/1",
+							"raw": "http://localhost:8080/ivro/pesquisar/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
-								"livro",
+								"ivro",
+								"pesquisar",
 								"1"
 							]
 						}
@@ -159,15 +159,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/livro",
+							"raw": "http://localhost:8080/ivro/pesquisar",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
-								"livro"
+								"ivro",
+								"pesquisar"
 							]
 						}
 					},
@@ -180,7 +180,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nomeAluno\": \"Felipe Rodrigues\",\r\n    \"cargaHorariaSemanalMaxima\": 40.0,\r\n    \"matriculaAluno\": 8698547,\r\n    \"cpf\": 42569986547\r\n}",
+							"raw": "{\r\n    \"dataLancamento\": 2022-08-01,\r\n    \"descricao\": \"Blabla\",\r\n    \"preco\": 86.47,\r\n    \"titulo\": \"Quincas Borba\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -188,15 +188,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/livro",
+							"raw": "http://localhost:8080/livro/cadastrar",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
-								"livro"
+								"livro",
+								"cadastrar"
 							]
 						}
 					},
@@ -217,16 +217,16 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/livro/2",
+							"raw": "http://localhost:8080/livro/deletar/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
 								"livro",
-								"2"
+								"deletar",
+								"1"
 							]
 						}
 					},
@@ -247,15 +247,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/livro/3",
+							"raw": "http://localhost:8080/livro/alterar/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
 								"livro",
+								"alterar",
 								"3"
 							]
 						}
@@ -285,15 +285,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/livraria/1",
+							"raw": "http://localhost:8080/livraria/pesquisar/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
 								"livraria",
+								"pesquisar",
 								"1"
 							]
 						}
@@ -318,15 +318,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/livraria",
+							"raw": "http://localhost:8080/livraria/pesquisar",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
-								"livraria"
+								"livraria",
+								"pesquisar"
 							]
 						}
 					},
@@ -339,7 +339,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nomeAluno\": \"Felipe Rodrigues\",\r\n    \"cargaHorariaSemanalMaxima\": 40.0,\r\n    \"matriculaAluno\": 8698547,\r\n    \"cpf\": 42569986547\r\n}",
+							"raw": "{\r\n    \"cnpj\": \"12336854524165\",\r\n    \"email\": \"cantodoslivros@gmail.com\",\r\n    \"localizacao\": \"Rua Victor Konder, 286\",\r\n    \"nomeLivraria\": \"Canto dos Livros\",\r\n    \"numeroTelefone\": \"4796552316\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -347,15 +347,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/livraria",
+							"raw": "http://localhost:8080/livraria/cadastrar",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
-								"livraria"
+								"livraria",
+								"cadastrar"
 							]
 						}
 					},
@@ -376,15 +376,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/livraria/2",
+							"raw": "http://localhost:8080/livraria/deletar/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
 								"livraria",
+								"deletar",
 								"2"
 							]
 						}
@@ -406,15 +406,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/livraria/3",
+							"raw": "http://localhost:8080/livraria/alterar/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
 								"livraria",
+								"alterar",
 								"3"
 							]
 						}
@@ -444,15 +444,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/autor/1",
+							"raw": "http://localhost:8080/autor/pesquisar/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
 								"autor",
+								"pesquisar",
 								"1"
 							]
 						}
@@ -477,15 +477,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/autor",
+							"raw": "http://localhost:8080/autor/pesquisar",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
-								"autor"
+								"autor",
+								"pesquisar"
 							]
 						}
 					},
@@ -498,7 +498,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nomeAluno\": \"Felipe Rodrigues\",\r\n    \"cargaHorariaSemanalMaxima\": 40.0,\r\n    \"matriculaAluno\": 8698547,\r\n    \"cpf\": 42569986547\r\n}",
+							"raw": "{\r\n    \"generoAutor\": \"MASCULINO\",\r\n    \"nomeAutor\": \"Felipe Rodrigues\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -506,15 +506,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/autor",
+							"raw": "http://localhost:8080/autor/cadastrar",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
-								"autor"
+								"autor",
+								"cadastrar"
 							]
 						}
 					},
@@ -535,15 +535,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/autor/2",
+							"raw": "http://localhost:8080/autor/deletar/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
 								"autor",
+								"deletar",
 								"2"
 							]
 						}
@@ -565,15 +565,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/autor/3",
+							"raw": "http://localhost:8080/autor/alterar/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
 								"autor",
+								"alterar",
 								"3"
 							]
 						}
