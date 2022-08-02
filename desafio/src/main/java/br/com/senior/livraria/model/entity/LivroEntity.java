@@ -17,7 +17,6 @@ import java.util.UUID;
 public class LivroEntity implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID idLivro;
 
     @Column(nullable = false)
@@ -36,7 +35,11 @@ public class LivroEntity implements Serializable {
     @JoinColumn(name = "livraria", referencedColumnName = "idLivraria")
     LivrariaEntity livraria;
 
-    @ManyToMany(mappedBy = "livros",fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(
+            name = "autor_livro",
+            joinColumns = @JoinColumn(name = "livro", referencedColumnName = "idlivro"),
+            inverseJoinColumns = @JoinColumn(name = "autor", referencedColumnName = "idautor"))
     List<AutorEntity> autores;
 
 }

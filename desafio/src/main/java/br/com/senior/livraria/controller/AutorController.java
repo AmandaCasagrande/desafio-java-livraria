@@ -22,7 +22,7 @@ public class AutorController {
     @Autowired
     private AutorMapper mapper;
 
-    @GetMapping(path = "api/autor/{idAutor}")
+    @GetMapping(path = "/pesquisar/{idAutor}")
     public ResponseEntity<AutorDto> findById(@PathVariable String idAutor){
         UUID id = UUID.fromString(idAutor);
 
@@ -30,7 +30,7 @@ public class AutorController {
         return ResponseEntity.ok().body(body);
     }
 
-    @GetMapping(path = "api/autor")
+    @GetMapping(path = "/pesquisar")
     public ResponseEntity<List<AutorDto>> findAll(){
         List<AutorDto> autorDtos = service.getAllAutores()
                 .stream()
@@ -38,14 +38,14 @@ public class AutorController {
         return ResponseEntity.ok().body(autorDtos);
     }
 
-    @PostMapping(path = "api/autor")
+    @PostMapping(path = "/cadastrar")
     public ResponseEntity<AutorDto> cadastrarAutor(@RequestBody AutorDto autorDto){
         AutorEntity autor = mapper.toEntity(autorDto);
         AutorDto body = mapper.toDto(service.createAutor(autor));
         return ResponseEntity.ok().body(body);
     }
 
-    @PutMapping(path = "api/atualizar/{idAutor}")
+    @PutMapping(path = "/alterar/{idAutor}")
     public ResponseEntity<AutorDto> atualizarAutor(@PathVariable String idAutor,
                                                    @RequestBody AutorDto autorDto){
         UUID id = UUID.fromString(idAutor);
@@ -55,7 +55,7 @@ public class AutorController {
         return ResponseEntity.ok().body(body);
     }
 
-    @DeleteMapping(path = "api/deletar/{idAutor}")
+    @DeleteMapping(path = "/deletar/{idAutor}")
     public ResponseEntity<Void> deletarAutor(String idAutor){
         UUID id = UUID.fromString(idAutor);
         service.deleteAutor(id);

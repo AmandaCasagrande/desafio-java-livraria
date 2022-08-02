@@ -22,14 +22,14 @@ public class LivrariaController {
     @Autowired
     private LivrariaMapper mapper;
 
-    @GetMapping(path = "api/livraria/{idLivraria}")
+    @GetMapping(path = "/pesquisar/{idLivraria}")
     public ResponseEntity<LivrariaDto> findById (@PathVariable String idLivraria){
         UUID id = UUID.fromString(idLivraria);
         LivrariaDto body = mapper.toDto(service.getLivraria(id));
 
         return ResponseEntity.ok().body(body);
     }
-    @GetMapping(path = "api/livraria")
+    @GetMapping(path = "/pesquisar")
     public ResponseEntity<List<LivrariaDto>> findAll(){
         List<LivrariaDto> livrariaDtos = service.getAllLivrarias()
                 .stream()
@@ -38,7 +38,7 @@ public class LivrariaController {
         return ResponseEntity.ok().body(livrariaDtos);
     }
 
-    @PostMapping(path = "api/livraria")
+    @PostMapping(path = "/cadastrar")
     public ResponseEntity<LivrariaDto> cadastrarAutor(@RequestBody LivrariaDto livrariaDto){
         LivrariaEntity livraria = mapper.toEntity(livrariaDto);
         LivrariaDto body = mapper.toDto(service.createLivraria(livraria));
@@ -46,7 +46,7 @@ public class LivrariaController {
         return ResponseEntity.ok().body(body);
     };
 
-    @PutMapping(path = "api/atualizar/{idLivraria}")
+    @PutMapping(path = "/alterar/{idLivraria}")
     public ResponseEntity<LivrariaDto> atualizarAutor(@PathVariable String idLivraria,
                                                       @RequestBody LivrariaDto livrariaDto){
         UUID id = UUID.fromString(idLivraria);
@@ -56,7 +56,7 @@ public class LivrariaController {
         return ResponseEntity.ok().body(body);
     }
 
-    @DeleteMapping(path = "api/deletar/{idLivraria}")
+    @DeleteMapping(path = "/deletar/{idLivraria}")
     public ResponseEntity<Void> deletarAutor(String idLivraria){
         UUID id = UUID.fromString(idLivraria);
         service.deleteLivraria(id);

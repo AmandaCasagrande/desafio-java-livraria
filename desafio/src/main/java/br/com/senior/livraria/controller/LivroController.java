@@ -21,9 +21,10 @@ public class LivroController {
     @Autowired
     private LivroService service;
 
+    @Autowired
     private LivroMapper mapper;
 
-    @GetMapping(path = "api/livro/{idLivro}")
+    @GetMapping(path = "/pesquisar/{idLivro}")
     public ResponseEntity<LivroDto> findById(@PathVariable String idLivro){
         UUID id = UUID.fromString(idLivro);
         LivroDto body = mapper.toDto(service.getLivro(id));
@@ -31,7 +32,7 @@ public class LivroController {
         return ResponseEntity.ok().body(body);
     }
 
-    @GetMapping(path = "api/livro")
+    @GetMapping(path = "/pesquisar")
     public ResponseEntity<List<LivroDto>> findAll(){
         List<LivroDto> livroDtos = service.getAllLivros()
                 .stream()
@@ -40,28 +41,28 @@ public class LivroController {
         return ResponseEntity.ok().body(livroDtos);
     };
 
-    @GetMapping(path = "api/livro/{titulo}")
+    @GetMapping(path = "/pesquisar/{titulo}")
     public ResponseEntity<LivroDto> findByTitulo(@PathVariable String titulo){
         LivroDto body = mapper.toDto(service.getTitulo(titulo));
 
         return ResponseEntity.ok().body(body);
     }
 
-    @GetMapping(path = "api/livro/{preco}")
+    @GetMapping(path = "/pesquisar/{preco}")
     public ResponseEntity<LivroDto> findByPreco(@PathVariable BigDecimal preco){
         LivroDto body = mapper.toDto(service.getPreco(preco));
 
         return ResponseEntity.ok().body(body);
     }
 
-    @GetMapping(path = "api/livro/{dataLancamento}")
+    @GetMapping(path = "/pesquisar/{dataLancamento}")
     public ResponseEntity<LivroDto> findByDataLancamento(@PathVariable LocalDate dataLancamento){
         LivroDto body = mapper.toDto(service.getDataLancamento(dataLancamento));
 
         return ResponseEntity.ok().body(body);
     }
 
-    @PostMapping(path = "api/livro")
+    @PostMapping(path = "/cadastrar")
     public ResponseEntity<LivroDto> cadastrarLivro (@RequestBody LivroDto livroDto){
         LivroEntity livro = mapper.toEntity(livroDto);
         LivroDto body = mapper.toDto(service.createLivro(livro));
@@ -69,7 +70,7 @@ public class LivroController {
         return ResponseEntity.ok().body(body);
     }
 
-    @PutMapping(path = "api/atualizar/{idLivro}")
+    @PutMapping(path = "/alterar/{idLivro}")
     public ResponseEntity<LivroDto> atualizarAutor(@PathVariable String idLivro,
                                                    @RequestBody LivroDto livroDto){
         UUID id = UUID.fromString(idLivro);
@@ -79,7 +80,7 @@ public class LivroController {
         return  ResponseEntity.ok().body(body);
     }
 
-    @DeleteMapping(path = "api/deletar/{idLivro}")
+    @DeleteMapping(path = "/deletar/{idLivro}")
     public ResponseEntity<Void> deletarAutor(String idLivro){
         UUID id = UUID.fromString(idLivro);
         service.deleteLivro(id);

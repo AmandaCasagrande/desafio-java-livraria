@@ -16,17 +16,17 @@ import java.util.UUID;
 public class AutorEntity implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "idAutor")
     private UUID idAutor;
 
     @Column(length = 100)
     private String nomeAutor;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private GeneroEnum genero;
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(mappedBy = "autores")
     List<LivroEntity> livros;
 
 }

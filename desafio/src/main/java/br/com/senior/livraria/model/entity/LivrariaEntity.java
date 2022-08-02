@@ -15,7 +15,6 @@ import java.util.UUID;
 public class LivrariaEntity implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID idLivraria;
 
     @Column(length = 100, nullable = false)
