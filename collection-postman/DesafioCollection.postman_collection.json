@@ -19,7 +19,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"idLivro\": \"73b76050-129b-11ed-861d-0242ac120002\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -27,7 +27,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/livro/pesquisar/1",
+							"raw": "http://localhost:8080/livro/pesquisar/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -36,7 +36,7 @@
 							"path": [
 								"livro",
 								"pesquisar",
-								"1"
+								""
 							]
 						}
 					},
@@ -52,7 +52,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"titulo\": \"Brás Cubas\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -60,7 +60,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/livro/pesquisar/1",
+							"raw": "http://localhost:8080/livro/pesquisar/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -69,7 +69,7 @@
 							"path": [
 								"livro",
 								"pesquisar",
-								"1"
+								""
 							]
 						}
 					},
@@ -85,7 +85,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"preco\": 80.00\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -93,7 +93,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/livro/pesquisar/1",
+							"raw": "http://localhost:8080/livro/pesquisar/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -102,7 +102,7 @@
 							"path": [
 								"livro",
 								"pesquisar",
-								"1"
+								""
 							]
 						}
 					},
@@ -118,7 +118,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"dataLancamento\": 22-08-2021\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -159,14 +159,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/ivro/pesquisar",
+							"raw": "http://localhost:8080/livro/pesquisar",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"ivro",
+								"livro",
 								"pesquisar"
 							]
 						}
@@ -209,7 +209,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"idLivro\": \"73b76050-129b-11ed-861d-0242ac120002\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -239,7 +239,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"idAluno\": 3,\r\n    \"nomeAluno\": \"Stephanie Loureiro\",\r\n    \"cargaHorariaSemanalMaxima\": 40.0,\r\n    \"matriculaAluno\": 6598547,\r\n    \"cpf\": 32569986547\r\n}",
+							"raw": "{\r\n    \"dataLancamento\": \"2022-08-01\",\r\n    \"descricao\": \"Blabla\",\r\n    \"preco\": 86.47,\r\n    \"titulo\": \"Quincas Borba\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -277,7 +277,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"idLivro\": \"73b76050-129b-11ed-861d-0242ac120002\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -285,7 +285,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/livraria/pesquisar/1",
+							"raw": "http://localhost:8080/livraria/pesquisar/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -294,7 +294,7 @@
 							"path": [
 								"livraria",
 								"pesquisar",
-								"1"
+								""
 							]
 						}
 					},
@@ -339,7 +339,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"cnpj\": \"12336854524165\",\r\n    \"email\": \"cantodoslivros@gmail.com\",\r\n    \"localizacao\": \"Rua Victor Konder, 286\",\r\n    \"nomeLivraria\": \"Canto dos Livros\",\r\n    \"numeroTelefone\": \"4796552316\"\r\n}",
+							"raw": "{\r\n    \"idLivraria\": \"0acce5d4-129a-11ed-861d-0242ac120002\",\r\n    \"cnpj\": \"12336854524165\",\r\n    \"email\": \"cantodoslivros@gmail.com\",\r\n    \"localizacao\": \"Rua Victor Konder, 286\",\r\n    \"nomeLivraria\": \"Canto dos Livros\",\r\n    \"numeroTelefone\": \"4796552316\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -368,7 +368,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"idLivro\": \"73b76050-129b-11ed-861d-0242ac120002\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -398,7 +398,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"idAluno\": 3,\r\n    \"nomeAluno\": \"Stephanie Loureiro\",\r\n    \"cargaHorariaSemanalMaxima\": 40.0,\r\n    \"matriculaAluno\": 6598547,\r\n    \"cpf\": 32569986547\r\n}",
+							"raw": "{\r\n    \"idLivraria\": \"0acce5d4-129a-11ed-861d-0242ac120002\",\r\n    \"cnpj\": \"12336854524165\",\r\n    \"email\": \"cantodoslivros@gmail.com\",\r\n    \"localizacao\": \"Rua Victor Konder, 286\",\r\n    \"nomeLivraria\": \"Canto dos Livros\",\r\n    \"numeroTelefone\": \"4796552316\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -406,7 +406,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/livraria/alterar/3",
+							"raw": "http://localhost:8080/livraria/alterar/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -415,7 +415,7 @@
 							"path": [
 								"livraria",
 								"alterar",
-								"3"
+								""
 							]
 						}
 					},
@@ -436,7 +436,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"idAutor\": \"58a3e226-129a-11ed-861d-0242ac120002\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -444,7 +444,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/autor/pesquisar/1",
+							"raw": "http://localhost:8080/autor/pesquisar/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -453,7 +453,7 @@
 							"path": [
 								"autor",
 								"pesquisar",
-								"1"
+								""
 							]
 						}
 					},
@@ -498,7 +498,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"generoAutor\": \"MASCULINO\",\r\n    \"nomeAutor\": \"Felipe Rodrigues\"\r\n}",
+							"raw": "\r\n{\r\n    \"nomeAutor\": \"Cecília Meireles\",\r\n    \"generoAutor\": \"FEMININO\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -527,7 +527,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"idAutor\": \"58a3e226-129a-11ed-861d-0242ac120002\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -535,7 +535,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/autor/deletar/2",
+							"raw": "http://localhost:8080/autor/deletar",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -543,8 +543,7 @@
 							"port": "8080",
 							"path": [
 								"autor",
-								"deletar",
-								"2"
+								"deletar"
 							]
 						}
 					},
@@ -557,7 +556,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"idAluno\": 3,\r\n    \"nomeAluno\": \"Stephanie Loureiro\",\r\n    \"cargaHorariaSemanalMaxima\": 40.0,\r\n    \"matriculaAluno\": 6598547,\r\n    \"cpf\": 32569986547\r\n}",
+							"raw": "\r\n{\r\n    \"nomeAutor\": \"Cecília Meireles\",\r\n    \"generoAutor\": \"FEMININO\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
