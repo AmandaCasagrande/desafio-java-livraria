@@ -1,6 +1,6 @@
-# Java Basic API
+# Java API - Livraria
 
-## 🛠 Packages and Tools:
+## 🛠️ Tecnologias e Ferramentas:
 
 * Java JDK 11.0
 * Intellij Community Edition 2022.1
@@ -17,37 +17,14 @@
 ## 💻 Run project:
 
 >`
-Run class JavaApiBasicaApplication
+Run class DesafioApplication
 `
 ## 🚀 Requests API:
 
-User (POST)
-
-**Request URL:**
-
-```
-http://localhost:8080/api/livraria
-```
-
-**Body content (type raw-JSON):**
-
-```
-{
-"name": "Irineu",
-"login": "irineu",
-"password": "123"
-}
-```
-
-*code/id = auto increment*
-
-status (GET)
-
-```
-http://localhost:8080/api/livraria
-```
-
-## Regra de Negócios:
+>`
+https://github.com/AmandaCasagrande/desafio-java-livraria/tree/main/collection-postman
+`
+## 💼 Regra de Negócios:
 
 --> Livro [X]
 * String       Titulo 
@@ -89,7 +66,7 @@ Extras:
 * filtrar livro por autores[], titulo[x], preço[x], DataLancamento[x], Livraria []
 * Solicitar um livro para outra livraria, procurar em qual livraria esta o livro e solicitar o livro para ela
 
-## Padrão de Projeto:
+## ⚙ Padrão de Projeto:
 
 * Facilita o desenvolvimento entre a equipe;
 * Facilita a compreensão do sistema;
