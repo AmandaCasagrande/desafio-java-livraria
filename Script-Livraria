@@ -1,0 +1,26 @@
+INSERT INTO public.livraria
+(id_livraria, cnpj, email, localizacao, nome_livraria, numero_telefone)
+VALUES('f2d823f8-1299-11ed-861d-0242ac120002', '12336854524165', 'cantodoslivros@gmail.com', 'Rua Victor Konder, 286', 'Canto dos Livros', '4796552316');
+
+select * from livraria l;
+
+INSERT INTO public.autor
+(id_autor, genero, nome_autor)
+VALUES('58a3e226-129a-11ed-861d-0242ac120002', 'MASCULINO', 'Machado de Assis');
+
+SELECT id_autor, genero, nome_autor
+FROM public.autor;
+
+INSERT INTO public.autor_livro
+(livro, autor)
+VALUES('73b76050-129b-11ed-861d-0242ac120002', '58a3e226-129a-11ed-861d-0242ac120002');
+
+SELECT livro, autor
+FROM public.autor_livro;
+
+INSERT INTO public.livro
+(id_livro, data_lancamento, descriçao, preco, titulo, livraria)
+VALUES('73b76050-129b-11ed-861d-0242ac120002', '22-08-2021', 'Blablabla', 80.00, 'Brás Cubas', 'f2d823f8-1299-11ed-861d-0242ac120002');
+
+SELECT id_livro, data_lancamento, descriçao, preco, titulo, livraria
+FROM public.livro;
