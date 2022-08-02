@@ -1,5 +1,7 @@
 # Java API - Livraria
 
+Amanda Casagrande, 2022
+
 ## 🛠️ Tecnologias e Ferramentas:
 
 * Java JDK 11.0
